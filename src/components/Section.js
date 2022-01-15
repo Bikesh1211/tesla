@@ -1,4 +1,5 @@
 import React from 'react'
+import { Fade } from 'react-awesome-reveal'
 import styled from 'styled-components'
 
 const Wrap = styled.div `
@@ -39,18 +40,19 @@ display:flex;
 justify-content: center;
 align-items:center;
 border-radius: 100px;
-opacity: 0.9;
+opacity: 0.8;
 cursor:pointer;
 margin:8px
 text-transform: uppercase;
-margin-left:30px;
+// margin-left:30px;
+
 `
 
 const RightBtn = styled(LetfBtn)
 `
 background-color:white;
 color:black;
-opacity:0.9;
+opacity:0.8;
 
 `
 
@@ -68,34 +70,36 @@ display:flex;
 justify-content:center;
 `
 
-const Button = styled.div `
+const Button = styled.div`
 `
 
 function Section({title,description,leftBtnText,rightBtnText,backgroundImg}) {
     return ( 
         <Wrap bgImage={backgroundImg}>
-            {/* <Fade bottom> */}
+            <Fade bottom>
 
         <ItemText >
         <h1>{title}</h1> 
         <p>{description}</p>
         </ItemText>
-            {/* </Fade> */}
+            </Fade>
 
 
         <Button >
+        <Fade bottom>
         <ButtonGroup>
         <LetfBtn >
         {leftBtnText}
         </LetfBtn> 
         { rightBtnText &&
 
-        <RightBtn >
-            {rightBtnText}
-        </RightBtn> 
-        }
+            <RightBtn >
+                {rightBtnText}
+            </RightBtn> 
+            }
 
         </ButtonGroup>
+        </Fade>
         <DownArrowContainer>
 
         <DownArrow src = "images/down-arrow.svg" / >
