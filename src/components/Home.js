@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Footer } from './Footer'
 import Section from './Section'
 
 const Container = styled.div`
@@ -12,15 +13,15 @@ function Home() {
             
             <Section 
             title = "Model 3"
-            description = "Order for Touchless Delivery"
+            description = "Order Online for Touchless Delivery"
             backgroundImg = "model-3.jpg"
-            leftBtnText = "CUSTOM ORDER"
-            rightBtnText = "EXISTING INVENTORY"
+            leftBtnText = "Custom Order"
+            rightBtnText = "Existing Inventory"
             />
 
             <Section 
             title = "Model Y"
-            description = "Order for Touchless Delivery"
+            description = "Order Online for Touchless Delivery"
             backgroundImg = "model-y.jpg"
             leftBtnText = "Custom Order"
             rightBtnText = "Existing Inventory"
@@ -28,14 +29,14 @@ function Home() {
 
             <Section 
             title = "Model S"
-            description = "Order for Touchless Delivery"
+            description = "Order Online for Touchless Delivery"
             backgroundImg = "model-s.jpg"
             leftBtnText = "Custom Order"
             rightBtnText = "Existing Inventory"
             />
             <Section 
             title = "Model X"
-            description = "Order for Touchless Delivery"
+            description = "Order Online for Touchless Delivery"
             backgroundImg = "model-x.jpg"
             leftBtnText = "Custom Order"
             rightBtnText = "Existing Inventory"
@@ -61,6 +62,8 @@ function Home() {
             leftBtnText = "Shop Now"                                                                                                                                                                                                                                   
             />  
 
+                <Footer/>
+        
         </Container>
     )
 }
